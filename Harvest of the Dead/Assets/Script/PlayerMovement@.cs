@@ -1,147 +1,107 @@
 using UnityEngine;
 
-
-
 public class PlayerController : MonoBehaviour
-
 {
-
-    // Public variables for movement speed and gravity
-
-    public float moveSpeed = 10f;
-
+    public float moveSpeed = 10f;
     public float gravity = -9.81f;
+    public bool isDriving = false;
 
-
-
-    // Private variables to hold component references
-
-    private CharacterController characterController;
-
+    private CharacterController characterController;
     private Animator animator;
-
     private Vector3 verticalVelocity;
 
-
-
+    private bool isInCarRange = false;
+    private CarController currentCar;
+    //-------------------------------------------------2nd-------------------
     void Start()
-
     {
-
-        // Get the attached components
-
-        characterController = GetComponent<CharacterController>();
-
+        characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-
-
-
-        // Lock the cursor to the center of the screen for a better gaming experience
-
-        Cursor.lockState = CursorLockMode.Locked;
-
+        Cursor.lockState = CursorLockMode.Locked;
     }
-
-
 
     void Update()
-
     {
+        // Handle getting in and out of the car
+        if (isInCarRange && Input.GetKeyDown(KeyCode.G))
+        {
+            if (currentCar != null)
+            {
+                currentCar.EnableDriving(this.gameObject);
+                this.enabled = false; // Disable this script
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.H))
+        {
+            if (currentCar != null)
+            {
+                currentCar.DisableDriving();
+                this.enabled = true; // Re-enable this script
+            }
+        }
 
-        // Get input for forward and backward movement
+        // The rest of the movement code only runs if the script is enabled
+        if (!enabled) return;
 
-        bool isMovingForward = Input.GetKey(KeyCode.W);
-
+        bool isMovingForward = Input.GetKey(KeyCode.W);
         bool isMovingBack = Input.GetKey(KeyCode.S);
 
-
-
-        // Update the Animator's boolean parameters for movement
-
-        animator.SetBool("isMovingForward", isMovingForward);
-
+        animator.SetBool("isMovingForward", isMovingForward);
         animator.SetBool("isMovingBack", isMovingBack);
 
-
-
         Vector3 moveDirection = Vector3.zero;
-
         if (isMovingForward)
-
         {
-
             moveDirection = transform.forward * moveSpeed;
-
         }
-
         else if (isMovingBack)
-
         {
-
             moveDirection = -transform.forward * moveSpeed;
-
         }
 
-
-
-        // Apply gravity to keep the character on the ground
-
-        if (characterController.isGrounded)
-
+        if (characterController.isGrounded)
         {
-
             verticalVelocity.y = -0.5f;
-
         }
-
         else
-
         {
-
             verticalVelocity.y += gravity * Time.deltaTime;
-
         }
 
+        Vector3 finalMove = moveDirection + verticalVelocity;
+        characterController.Move(finalMove * Time.deltaTime);
 
-
-        // Combine horizontal movement and vertical velocity
-
-        Vector3 finalMove = moveDirection + verticalVelocity;
-
-
-
-        // Move the character using the Character Controller
-
-        characterController.Move(finalMove * Time.deltaTime);
-
-
-
-        // Handle mouse input for shooting and changing states
-
-        if (Input.GetMouseButtonDown(0)) // Left mouse button
-
-        {
-
-            // Transition to the gun state and trigger the shoot animation
-
-            animator.SetBool("isHoldingGun", true);
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetBool("isHoldingGun", true);
             animator.SetTrigger("Shoot");
-
         }
 
-
-
-        if (Input.GetMouseButtonDown(1)) // Right mouse button
-
-        {
-
-            // Transition back to the idle state
-
-            animator.SetBool("isHoldingGun", false);
-
+        if (Input.GetMouseButtonDown(1))
+        {
+            animator.SetBool("isHoldingGun", false);
         }
-
     }
 
+
+    
+    void OnTriggerEnter(Collider other)
+    {
+        CarController car = other.GetComponent<CarController>();
+        if (car != null)
+        {
+            isInCarRange = true;
+            currentCar = car;
+            Debug.Log("Press 'G' to get in the car.");
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<CarController>() != null)
+        {
+            isInCarRange = false;
+            currentCar = null;
+        }
+    }
 }
