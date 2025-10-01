@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.554717, g: 0.37155572, b: 0.37155572, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.02
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ab929ecfa26ff6340908bb68c3d0a5c3, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -3657,6 +3657,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 38335279662569219, guid: 34d3f526198dae440bb2ce6005d86055, type: 3}
   m_PrefabInstance: {fileID: 1628266727}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &142341184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.47677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.47677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.47677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.176838
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.08
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -248.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c2f0db920a1ac1f40a15a84af753a481, type: 2}
+    - target: {fileID: 919132149155446097, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+      propertyPath: m_Name
+      value: Low Poly Zombie Car By EdwinRCED
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 8164078558771037576, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 47931b0bd21d6ec468b387d0700d6530, type: 3}
 --- !u!4 &142430377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4870204933709518, guid: d2cd02263a1e8084abf81f1324b929be, type: 3}
@@ -56990,3 +57064,4 @@ SceneRoots:
   - {fileID: 1717015426}
   - {fileID: 226731104}
   - {fileID: 403341951}
+  - {fileID: 142341184}
