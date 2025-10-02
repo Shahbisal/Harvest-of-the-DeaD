@@ -14704,59 +14704,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2cd02263a1e8084abf81f1324b929be, type: 3}
---- !u!1 &506746740 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2917838752646922675, guid: ad6fc192e8372044d8a077e2fccbbddf, type: 3}
-  m_PrefabInstance: {fileID: 1717015426}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &506746743
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506746740}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.148409, y: 1.0269299, z: 1.5716143}
-  m_Center: {x: -0.000028868462, y: -0.026564578, z: 0.8298652}
---- !u!54 &506746744
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506746740}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &507149883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4870204933709518, guid: d2cd02263a1e8084abf81f1324b929be, type: 3}
@@ -46123,12 +46070,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8199776741730404999, guid: ad6fc192e8372044d8a077e2fccbbddf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614454529}
-    - targetCorrespondingSourceObject: {fileID: 2917838752646922675, guid: ad6fc192e8372044d8a077e2fccbbddf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 506746744}
-    - targetCorrespondingSourceObject: {fileID: 2917838752646922675, guid: ad6fc192e8372044d8a077e2fccbbddf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 506746743}
   m_SourcePrefab: {fileID: 100100000, guid: ad6fc192e8372044d8a077e2fccbbddf, type: 3}
 --- !u!4 &1718026884 stripped
 Transform:
