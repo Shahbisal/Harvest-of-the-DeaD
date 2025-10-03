@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 85727
+  controlID: 1866
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -62,8 +62,10 @@ MonoBehaviour:
     m_SaveData: []
     m_ContainerData: []
     m_OverlaysVisible: 1
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
+  m_SerializedViewNames:
+  - UnityEditor.DeviceSimulation.SimulatorWindow
+  m_SerializedViewValues:
+  - C:\Users\Bisal shah\OneDrive\Desktop\Git\Harvest-of-the-DeaD\Harvest of the Dead\Library\PlayModeViewStates\70937397e298c1c449a13618cf73e3d0
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -93,9 +95,9 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -151,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 85728
+  controlID: 1867
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -177,7 +179,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 85729
+  controlID: 1868
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -244,9 +246,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7efbfbff
-      m_LastClickedID: -263298
-      m_ExpandedIDs: 8076fcff42fbffff6a650200
+      m_SelectedIDs: b8dd0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: dc5affff6467ffffea98ffff82c4ffff80e70000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -263,7 +265,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -947,9 +949,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 526.4475, y: 592.7852, z: -497.7917}
+    m_Target: {x: -9.2439, y: 4.4388766, z: -106.611824}
     speed: 2
-    m_Value: {x: 526.4475, y: 592.7852, z: -497.7917}
+    m_Value: {x: -9.2439, y: 4.4388766, z: -106.611824}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -995,13 +997,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.0335871, y: 0.019785982, z: -0.0006654315, w: 0.9992434}
+    m_Target: {x: 0.037351213, y: 0.6015067, z: -0.02817102, w: 0.7975156}
     speed: 2
-    m_Value: {x: -0.0335871, y: -0.019785982, z: 0.0006654315, w: -0.9992434}
+    m_Value: {x: 0.03735065, y: 0.60149765, z: -0.028170597, w: 0.7975036}
   m_Size:
-    m_Target: 74.109085
+    m_Target: 7.097322
     speed: 2
-    m_Value: 74.109085
+    m_Value: 7.097322
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1106,7 +1108,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scene
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1116,7 +1118,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scene
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Bisal shah\OneDrive\Desktop\Git\Harvest-of-the-DeaD\Harvest
     of the Dead
@@ -1124,9 +1126,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 70d30000
-    m_LastClickedID: 54128
-    m_ExpandedIDs: 0000000070d30000
+    m_SelectedIDs: f8dc0000
+    m_LastClickedID: 56568
+    m_ExpandedIDs: 00000000c6da0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1155,7 +1157,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000070d30000
+    m_ExpandedIDs: 00000000c6da0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1181,8 +1183,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 7efbfbff
-    m_LastClickedInstanceID: -263298
+    m_SelectedInstanceIDs: b8dd0000
+    m_LastClickedInstanceID: 56760
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
