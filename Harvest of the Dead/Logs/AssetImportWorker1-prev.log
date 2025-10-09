@@ -15,7 +15,7 @@ C:/Users/Bisal shah/OneDrive/Desktop/Git/Harvest-of-the-DeaD/Harvest of the Dead
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63426
+51520
 -job-worker-count
 7
 -background-job-worker-count
@@ -59,12 +59,14 @@ C:/Users/Bisal shah/OneDrive/Desktop/Git/Harvest-of-the-DeaD/Harvest of the Dead
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20644]  Target information:
+Player connection [1496]  Target information:
 
-Player connection [20644]  * "[IP] 10.1.116.121 [Port] 0 [Flags] 2 [Guid] 1463583046 [EditorId] 1463583046 [Version] 1048832 [Id] WindowsEditor(7,BISAL-CHAURASIYA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [1496]  * "[IP] 10.2.0.2 [Port] 0 [Flags] 2 [Guid] 3718384057 [EditorId] 3718384057 [Version] 1048832 [Id] WindowsEditor(7,BISAL-CHAURASIYA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [20644] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [20644] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1496]  * "[IP] 10.1.116.121 [Port] 0 [Flags] 2 [Guid] 3718384057 [EditorId] 3718384057 [Version] 1048832 [Id] WindowsEditor(7,BISAL-CHAURASIYA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [1496] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [1496] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,7 +77,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.03 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.32f1 (b2e806cf271c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/Resources/UnitySubsystems
@@ -91,52 +93,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.009185 seconds.
-- Loaded All Assemblies, in  0.493 seconds
+Registered in 0.013905 seconds.
+- Loaded All Assemblies, in  0.663 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 387 ms
+Android Extension - Scanning For ADB Devices 520 ms
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.894 seconds
-Domain Reload Profiling: 1384ms
-	BeginReloadAssembly (169ms)
+- Finished resetting the current domain, in  1.174 seconds
+Domain Reload Profiling: 1833ms
+	BeginReloadAssembly (224ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (64ms)
-	LoadAllAssembliesAndSetupDomain (199ms)
-		LoadAssemblies (169ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (264ms)
+		LoadAssemblies (222ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (192ms)
-			TypeCache.Refresh (190ms)
-				TypeCache.ScanAssembly (175ms)
+		AnalyzeDomain (258ms)
+			TypeCache.Refresh (255ms)
+				TypeCache.ScanAssembly (233ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (894ms)
+	FinalizeReload (1175ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (837ms)
+		SetupLoadedEditorAssemblies (1119ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (510ms)
+			InitializePlatformSupportModulesInManaged (687ms)
 			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (165ms)
-			ProcessInitializeOnLoadMethodAttributes (84ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (209ms)
+			ProcessInitializeOnLoadMethodAttributes (131ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -145,314 +147,161 @@ Domain Reload Profiling: 1384ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.230 seconds
-Refreshing native plugins compatible for Editor in 3.02 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.603 seconds
+Refreshing native plugins compatible for Editor in 2.13 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.084 seconds
-Domain Reload Profiling: 2307ms
-	BeginReloadAssembly (223ms)
+- Finished resetting the current domain, in  1.265 seconds
+Domain Reload Profiling: 2859ms
+	BeginReloadAssembly (310ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (873ms)
-		LoadAssemblies (602ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (1122ms)
+		LoadAssemblies (767ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (410ms)
-			TypeCache.Refresh (269ms)
-				TypeCache.ScanAssembly (248ms)
-			BuildScriptInfoCaches (113ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (1085ms)
+		AnalyzeDomain (544ms)
+			TypeCache.Refresh (358ms)
+				TypeCache.ScanAssembly (330ms)
+			BuildScriptInfoCaches (163ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1266ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (846ms)
+		SetupLoadedEditorAssemblies (983ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
+			InitializePlatformSupportModulesInManaged (26ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (160ms)
-			ProcessInitializeOnLoadAttributes (548ms)
-			ProcessInitializeOnLoadMethodAttributes (99ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (177ms)
+			ProcessInitializeOnLoadAttributes (658ms)
+			ProcessInitializeOnLoadMethodAttributes (109ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.19 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 216 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6971 unused Assets / (6.5 MB). Loaded Objects now: 7672.
-Memory consumption went from 172.1 MB to 165.6 MB.
-Total: 15.767600 ms (FindLiveObjects: 1.534300 ms CreateObjectMapping: 1.460100 ms MarkObjects: 6.769500 ms  DeleteObjects: 6.001200 ms)
+Unloading 6973 unused Assets / (6.2 MB). Loaded Objects now: 7674.
+Memory consumption went from 174.3 MB to 168.0 MB.
+Total: 15.722200 ms (FindLiveObjects: 1.280900 ms CreateObjectMapping: 1.355900 ms MarkObjects: 7.736500 ms  DeleteObjects: 5.346100 ms)
 
 ========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.191 seconds
+Refreshing native plugins compatible for Editor in 1.92 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.279 seconds
+Domain Reload Profiling: 2468ms
+	BeginReloadAssembly (291ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (772ms)
+		LoadAssemblies (600ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (327ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (293ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1280ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (965ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (183ms)
+			ProcessInitializeOnLoadAttributes (629ms)
+			ProcessInitializeOnLoadMethodAttributes (102ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 3.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6969 unused Assets / (5.7 MB). Loaded Objects now: 7688.
+Memory consumption went from 154.8 MB to 149.1 MB.
+Total: 17.094500 ms (FindLiveObjects: 1.651200 ms CreateObjectMapping: 1.703500 ms MarkObjects: 8.726100 ms  DeleteObjects: 5.010200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
 Received Import Request.
-  Time since last request: 1086877.257701 seconds.
-  path: Assets/Scene/Day_Scene.unity
-  artifactKey: Guid(8af6300bfc0b6bc4ea73ef048645fbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scene/Day_Scene.unity using Guid(8af6300bfc0b6bc4ea73ef048645fbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3595036a2755a9c8b566b2ffcd9718cb') in 0.0122235 seconds
+  Time since last request: 1183412.871872 seconds.
+  path: Assets/Scene/MainMenuHervestof TheDead.unity
+  artifactKey: Guid(db73dbbca3c5ca54f90cbc7b4e736004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scene/MainMenuHervestof TheDead.unity using Guid(db73dbbca3c5ca54f90cbc7b4e736004) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eab4496d7680c76bb115d4959c8c4511') in 0.0064237 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.077 seconds
-Refreshing native plugins compatible for Editor in 2.33 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.168 seconds
+Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.037 seconds
-Domain Reload Profiling: 2113ms
-	BeginReloadAssembly (255ms)
+- Finished resetting the current domain, in  1.290 seconds
+Domain Reload Profiling: 2455ms
+	BeginReloadAssembly (264ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (67ms)
-	RebuildCommonClasses (62ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (704ms)
-		LoadAssemblies (533ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (783ms)
+		LoadAssemblies (596ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (297ms)
-			TypeCache.Refresh (9ms)
+		AnalyzeDomain (318ms)
+			TypeCache.Refresh (8ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (266ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1038ms)
+			BuildScriptInfoCaches (283ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (1291ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (757ms)
+		SetupLoadedEditorAssemblies (970ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (157ms)
-			ProcessInitializeOnLoadAttributes (488ms)
-			ProcessInitializeOnLoadMethodAttributes (75ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (179ms)
+			ProcessInitializeOnLoadAttributes (618ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 3.46 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (36ms)
+Refreshing native plugins compatible for Editor in 5.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6967 unused Assets / (6.0 MB). Loaded Objects now: 7688.
-Memory consumption went from 153.2 MB to 147.2 MB.
-Total: 19.620400 ms (FindLiveObjects: 1.584400 ms CreateObjectMapping: 2.056200 ms MarkObjects: 9.157200 ms  DeleteObjects: 6.819800 ms)
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6969 unused Assets / (5.9 MB). Loaded Objects now: 7692.
+Memory consumption went from 153.9 MB to 148.0 MB.
+Total: 27.791300 ms (FindLiveObjects: 2.087400 ms CreateObjectMapping: 2.454100 ms MarkObjects: 14.008600 ms  DeleteObjects: 9.237600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 95.502714 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Balcon_V1.prefab
-  artifactKey: Guid(9791f40a2e4946942aa7587dcaee53f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Balcon_V1.prefab using Guid(9791f40a2e4946942aa7587dcaee53f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ceeed91b459ad6788cac14dcf646788') in 0.9531537 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_90cm.1_Circle.prefab
-  artifactKey: Guid(e9b8aa9f85f00ad4888cb1064e390230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_90cm.1_Circle.prefab using Guid(e9b8aa9f85f00ad4888cb1064e390230) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '355bc205d02faa0a1b64926fbb177000') in 0.0539544 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_50cm.prefab
-  artifactKey: Guid(94445d369bbd8ba4bb2c21928abea62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_50cm.prefab using Guid(94445d369bbd8ba4bb2c21928abea62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '672a135f61b71b8690c39f8b260baf4c') in 0.0416411 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000079 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_15cm.prefab
-  artifactKey: Guid(e44ed973169626745bb3b4d42424c5a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_15cm.prefab using Guid(e44ed973169626745bb3b4d42424c5a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbadda1ed9580b4962a2c791dd4df3e2') in 0.0414326 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_25cm.prefab
-  artifactKey: Guid(ebc84372c2a5b7a4381a498687ac634d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_25cm.prefab using Guid(ebc84372c2a5b7a4381a498687ac634d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c76f410db29a8ce6df3cec71ae2a98d') in 0.0391989 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/bracket_beam_wood.prefab
-  artifactKey: Guid(1e20a335352c6c141a1b7589f2aaa50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/bracket_beam_wood.prefab using Guid(1e20a335352c6c141a1b7589f2aaa50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aec8b7aff80422e427664b6157db5e68') in 0.0756314 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Balcon_V3.prefab
-  artifactKey: Guid(c65d923781f04f043a69e9d876bbd8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Balcon_V3.prefab using Guid(c65d923781f04f043a69e9d876bbd8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6162c7928fa1e2733af6bbc58eb999b0') in 0.0508783 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Model/Beam_1.fbx
-  artifactKey: Guid(22529669a16b82b49af62cfd69552958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Model/Beam_1.fbx using Guid(22529669a16b82b49af62cfd69552958) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a05467a0e77d72b32c50e56537393c5c') in 0.1906104 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Model/Beam_Roof.fbx
-  artifactKey: Guid(08b6e193ce482234ea8ed6772ce01732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Model/Beam_Roof.fbx using Guid(08b6e193ce482234ea8ed6772ce01732) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05e21c41ff1ddbb489f46f397dcff353') in 0.0596159 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/bracket_C.prefab
-  artifactKey: Guid(520548c2001d75747a3692894e32dd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/bracket_C.prefab using Guid(520548c2001d75747a3692894e32dd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc644cb3e59c2716d855ab9bfe78b30b') in 0.0537726 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_90cm_Lar.prefab
-  artifactKey: Guid(19ed170f4d00cb24db36cacaa24cb32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Beam/Prefab/Beam1_90cm_Lar.prefab using Guid(19ed170f4d00cb24db36cacaa24cb32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d0ff04baa348e8f1a710c73a1795983') in 0.0993096 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/ModularPiece/Model/Block_wall.fbx
-  artifactKey: Guid(5623e6db0dca7f143a5f8b0d0f55f990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/ModularPiece/Model/Block_wall.fbx using Guid(5623e6db0dca7f143a5f8b0d0f55f990) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '486ac29b4a6fff210f102048256a49b3') in 0.2933207 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 43
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.168298 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Roof/Prefab/Chimney.001.prefab
-  artifactKey: Guid(dac7a83037dbaad49be9d4368d5322be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Roof/Prefab/Chimney.001.prefab using Guid(dac7a83037dbaad49be9d4368d5322be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97cdbef8e4c6eb86e0ba52cc6b45dd89') in 0.0494442 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Roof/Prefab/Chimney.005.prefab
-  artifactKey: Guid(9dc2fe288b092c14b83f56f23ef6c156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Roof/Prefab/Chimney.005.prefab using Guid(9dc2fe288b092c14b83f56f23ef6c156) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd2170e02fe2f43c5a6f8a89ff56a0a2') in 0.0897882 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Window/Prefab/Circle_window.prefab
-  artifactKey: Guid(e4b8c1630c5475145b9ad3904669dd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Window/Prefab/Circle_window.prefab using Guid(e4b8c1630c5475145b9ad3904669dd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a968f39dec01ac966a7723a66979fd3') in 0.0484416 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.036596 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Doors/Prefab/DoorFrame.prefab
-  artifactKey: Guid(9eefa3addd967d746960a484d473214b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Doors/Prefab/DoorFrame.prefab using Guid(9eefa3addd967d746960a484d473214b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7aff00fdf85dd6bc0a17ad4ba7a6d6a6') in 0.0538264 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.687488 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Roof_Modular_V3.prefab
-  artifactKey: Guid(47caae99f1d61cb43a22f1c1123c339f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Roof_Modular_V3.prefab using Guid(47caae99f1d61cb43a22f1c1123c339f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e4e624c44e08b31a7c669879cc3f256') in 0.1509931 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Roof/Model/Roof_tile.fbx
-  artifactKey: Guid(692cb5f669b0029478d99851045b0288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Roof/Model/Roof_tile.fbx using Guid(692cb5f669b0029478d99851045b0288) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '711eadd852de2da6303c665b66c9c954') in 0.1848487 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Model/Roof_V1.fbx
-  artifactKey: Guid(c89b746bba216e64183ff1a06528327c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Model/Roof_V1.fbx using Guid(c89b746bba216e64183ff1a06528327c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b9ded958ab5cd5f2e4ff19873b3110b') in 0.1012199 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Roof_V1.prefab
-  artifactKey: Guid(2009592f49fc1ef4aaa516a05f635489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Roof_V1.prefab using Guid(2009592f49fc1ef4aaa516a05f635489) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '735cfa0c476f8f36278c2f7088671b3a') in 0.0527527 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000073 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Roof/Prefab/Roof_Tile3.prefab
-  artifactKey: Guid(bd33540a61be191448a066519ed150ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Roof/Prefab/Roof_Tile3.prefab using Guid(bd33540a61be191448a066519ed150ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd28b939000f5c56c8409ef8e1159df3e') in 0.0582301 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.068259 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Roof_Wall_V3.prefab
-  artifactKey: Guid(ae2bd00ec6ea10c4fa401ba34e20e36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Roof_Wall_V3.prefab using Guid(ae2bd00ec6ea10c4fa401ba34e20e36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba8723464a9864b9b3f4289001799d56') in 0.0848189 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.041310 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Side_house_Piece.prefab
-  artifactKey: Guid(9e2e2f3e663f3fb4da40095ceaad7522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Side_house_Piece.prefab using Guid(9e2e2f3e663f3fb4da40095ceaad7522) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75ba9150f17f4c9538e905654e37e4a7') in 0.17746 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Side_house_Piece_V1.prefab
-  artifactKey: Guid(a105f0d851c5a19419b22560f91a8387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Side_house_Piece_V1.prefab using Guid(a105f0d851c5a19419b22560f91a8387) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6194a9d463d367bfa88d91fb69041efc') in 0.0955769 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.076510 seconds.
-  path: Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Stair_V1.prefab
-  artifactKey: Guid(e8dd96a6574346c409a118cb1d20ad13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D-Models/Erbeilo3d_StylizePack_Demo/Assets/Modular_Big_Piece/Prefab/Stair_V1.prefab using Guid(e8dd96a6574346c409a118cb1d20ad13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f47d41a5170856c4457e29b29a643b6') in 0.0445834 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
