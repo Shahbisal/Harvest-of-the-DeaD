@@ -12,7 +12,13 @@ public class PlayerController : MonoBehaviour
 
     private bool isInCarRange = false;
     private CarController currentCar;
-    //-------------------------------------------------2nd-------------------
+
+    [Header("Gun Settings")]
+    public GameObject bulletPrefab;     // Assign your bullet prefab here
+    public Transform gunPoint;          // Assign the gun tip here
+    public float fireCooldown = 0.2f;   // Firing delay
+    private float nextFireTime = 0f;
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -22,13 +28,13 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Handle getting in and out of the car
+        // Handle getting in and out of car
         if (isInCarRange && Input.GetKeyDown(KeyCode.G))
         {
             if (currentCar != null)
             {
                 currentCar.EnableDriving(this.gameObject);
-                this.enabled = false; // Disable this script
+                this.enabled = false;
             }
         }
         else if (Input.GetKeyDown(KeyCode.H))
@@ -36,13 +42,13 @@ public class PlayerController : MonoBehaviour
             if (currentCar != null)
             {
                 currentCar.DisableDriving();
-                this.enabled = true; // Re-enable this script
+                this.enabled = true;
             }
         }
 
-        // The rest of the movement code only runs if the script is enabled
         if (!enabled) return;
 
+        // Movement inputs
         bool isMovingForward = Input.GetKey(KeyCode.W);
         bool isMovingBack = Input.GetKey(KeyCode.S);
 
@@ -59,22 +65,39 @@ public class PlayerController : MonoBehaviour
             moveDirection = -transform.forward * moveSpeed;
         }
 
+        // Combined movement for WA, WD, SA, SD
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
+        {
+            moveDirection = (-transform.right + transform.forward).normalized * moveSpeed;
+        }
+        else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
+        {
+            moveDirection = (transform.right + transform.forward).normalized * moveSpeed;
+        }
+        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
+        {
+            moveDirection = (-transform.right - transform.forward).normalized * moveSpeed;
+        }
+        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
+        {
+            moveDirection = (transform.right - transform.forward).normalized * moveSpeed;
+        }
+
         if (characterController.isGrounded)
-        {
             verticalVelocity.y = -0.5f;
-        }
         else
-        {
             verticalVelocity.y += gravity * Time.deltaTime;
-        }
 
         Vector3 finalMove = moveDirection + verticalVelocity;
         characterController.Move(finalMove * Time.deltaTime);
 
-        if (Input.GetMouseButtonDown(0))
+        // Shooting logic
+        if (Input.GetMouseButtonDown(0) && Time.time > nextFireTime)
         {
+            nextFireTime = Time.time + fireCooldown;
             animator.SetBool("isHoldingGun", true);
             animator.SetTrigger("Shoot");
+            Shoot();
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -83,8 +106,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void Shoot()
+    {
+        if (bulletPrefab != null && gunPoint != null)
+        {
+            Instantiate(bulletPrefab, gunPoint.position, gunPoint.rotation);
+        }
+    }
 
-    
     void OnTriggerEnter(Collider other)
     {
         CarController car = other.GetComponent<CarController>();
@@ -105,3 +134,4 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
+//-----------------------------------------------------------2nda
