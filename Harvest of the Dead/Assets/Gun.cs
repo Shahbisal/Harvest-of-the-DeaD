@@ -10,19 +10,26 @@ public class Gun : MonoBehaviour
     public float bulletSpeed = 10f;      // Bullet speed
     public Animator gunAnimator;         // Gun Animator
 
+    // New: Reference to the component to rotate for visual aiming (e.g., weapon bone)
+    public Transform aimingPivot;
+
+    // New: Limits the visual rotation, e.g., 60 degrees up, 60 degrees down
+    public float verticalAimLimit = 60f;
+
     void Update()
     {
-        // Fire when LEFT mouse button (0) is pressed
+        // 1. VISUAL AIMING UPDATE
+        HandleVisualAiming();
+
+        // 2. FIRING INPUT
         if (Input.GetMouseButtonDown(0))
         {
-            // FIX 1: Fire only if the gun is NOT in the correct Idle state.
             if (gunAnimator != null && !IsInIdleState())
             {
                 FireBullet();
             }
             else if (gunAnimator == null)
             {
-                // Safety check: allow fire if no animator is present
                 FireBullet();
             }
             else
@@ -32,10 +39,33 @@ public class Gun : MonoBehaviour
         }
     }
 
-    // Checks the current animation state against the constant IdleStateName
+    void HandleVisualAiming()
+    {
+        if (aimingPivot == null || Camera.main == null) return;
+
+        // Get the vertical rotation (pitch) from the main camera.
+        float cameraPitch = Camera.main.transform.localEulerAngles.x;
+
+        // Correct for Unity's 0-360 degree rotation
+        if (cameraPitch > 180)
+        {
+            cameraPitch -= 360;
+        }
+
+        // Clamp the pitch to your desired limits
+        cameraPitch = Mathf.Clamp(cameraPitch, -verticalAimLimit, verticalAimLimit);
+
+        // Apply the pitch rotation to the pivot point (the gun or aiming bone).
+        // Use the negative camera pitch to ensure the gun rotates up when the camera looks up.
+        aimingPivot.localEulerAngles = new Vector3(
+            -cameraPitch,
+            aimingPivot.localEulerAngles.y,
+            aimingPivot.localEulerAngles.z
+        );
+    }
+
     bool IsInIdleState()
     {
-        // Check both the Idle Menu and Idle Focus states as they are both idle-like
         var currentState = gunAnimator.GetCurrentAnimatorStateInfo(0);
         return currentState.IsName(IdleStateName) || currentState.IsName("root|Idle_Focus");
     }
@@ -53,13 +83,14 @@ public class Gun : MonoBehaviour
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            // FIX 2: Reverting to .forward. You MUST now adjust the bulletSpawnPoint rotation in the Editor.
-            rb.linearVelocity = bulletSpawnPoint.forward * bulletSpeed;
+            // The FIX: Use the camera's forward vector for direction, ensuring the bullet goes where the screen is aiming.
+            Vector3 aimDirection = Camera.main.transform.forward;
+            rb.linearVelocity = aimDirection * bulletSpeed;
         }
 
         if (gunAnimator != null)
         {
-            gunAnimator.SetTrigger("Shoot"); // trigger your shoot animation
+            gunAnimator.SetTrigger("Shoot");
         }
     }
 }

@@ -11,6 +11,9 @@ public class CameraController : MonoBehaviour
     {
         // Lock and hide the cursor
         Cursor.lockState = CursorLockMode.Locked;
+
+        // Initialize rotationX to a value within the new clamp range
+        rotationX = 0f;
     }
 
     void Update()
@@ -24,7 +27,11 @@ public class CameraController : MonoBehaviour
 
         // Rotate the camera vertically (looking up and down)
         rotationX -= mouseY;
-        rotationX = Mathf.Clamp(rotationX, -90f, 90f); // Prevents flipping
+
+        // FIX: Clamp the rotation between your new limits: -2.9 (up) and 4 (down)
+        // NOTE: Negative values are "Up" in Unity's local X-rotation
+        rotationX = Mathf.Clamp(rotationX, -2.9f, 4f);
+
         transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
     }
 }
