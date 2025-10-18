@@ -51,9 +51,17 @@ public class PlayerController : MonoBehaviour
         // Movement inputs
         bool isMovingForward = Input.GetKey(KeyCode.W);
         bool isMovingBack = Input.GetKey(KeyCode.S);
+        bool isMovingLeft = Input.GetKey(KeyCode.A);
+        bool isMovingRight = Input.GetKey(KeyCode.D);
 
+        // --- ANIMATION PARAMETER UPDATES ---
         animator.SetBool("isMovingForward", isMovingForward);
         animator.SetBool("isMovingBack", isMovingBack);
+
+        // FIX for stuck running animation: Determine if the player is moving at all.
+        bool isMoving = isMovingForward || isMovingBack || isMovingLeft || isMovingRight;
+        animator.SetBool("isRunning", isMoving);
+        // ------------------------------------
 
         Vector3 moveDirection = Vector3.zero;
         if (isMovingForward)
@@ -95,13 +103,20 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && Time.time > nextFireTime)
         {
             nextFireTime = Time.time + fireCooldown;
+
+            // Player is now holding/readying the gun
             animator.SetBool("isHoldingGun", true);
+
             animator.SetTrigger("Shoot");
             Shoot();
         }
 
+        // FIX: Logic for putting the gun away (transitioning back to root|Idle_Menu)
+        // We use the Right Mouse Button (1) to signal the gun is being put away.
         if (Input.GetMouseButtonDown(1))
         {
+            // This parameter must be set to false to trigger the transition from 
+            // root|Idle_Gun back to root|Idle_Menu in the Animator.
             animator.SetBool("isHoldingGun", false);
         }
     }
@@ -134,4 +149,3 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
-//-----------------------------------------------------------2nda

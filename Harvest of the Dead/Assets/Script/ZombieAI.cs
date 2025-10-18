@@ -8,6 +8,10 @@ public class ZombieAI : MonoBehaviour
     public float attackRange = 2f;      // Distance to stop and start attacking
     public float rotationSpeed = 5f;    // Speed at which the zombie turns to face the player
 
+    // NEW: Variable to control the zombie's running speed
+    [Header("Movement Settings")]
+    public float zombieRunSpeed = 3.5f; // Control the running speed in the Inspector
+
     // Health variables (You will need these for the die logic)
     public int maxHealth = 100;
     private int currentHealth;
@@ -22,9 +26,10 @@ public class ZombieAI : MonoBehaviour
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
 
-        // Good practice: Ensure NavMeshAgent is stopped initially if starting in Idle state
+        // Set the NavMeshAgent speed based on the public variable
         if (agent != null)
         {
+            agent.speed = zombieRunSpeed; // APPLYING THE NEW SPEED CONTROL
             agent.isStopped = true;
         }
     }
@@ -90,10 +95,11 @@ public class ZombieAI : MonoBehaviour
         }
     }
 
-    // --- DAMAGE AND DEATH FUNCTIONS (UNCHANGED) ---
+    // --- DAMAGE AND DEATH FUNCTIONS ---
 
     /// <summary>
-    /// This method is called when a bullet hits the zombie.
+    /// This method is called when the zombie takes damage.
+    /// (No gun/bullet code was present, only the TakeDamage signature, which remains for interaction with your bullet script).
     /// </summary>
     public void TakeDamage(int damage)
     {
@@ -128,4 +134,3 @@ public class ZombieAI : MonoBehaviour
         // Example: Destroy(gameObject, 5f);
     }
 }
-//------------------------------------------------------------------2nd------------

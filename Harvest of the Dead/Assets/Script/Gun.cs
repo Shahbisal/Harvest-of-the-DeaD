@@ -10,11 +10,26 @@ public class Gun : MonoBehaviour
     public float bulletSpeed = 10f;      // Bullet speed
     public Animator gunAnimator;         // Gun Animator
 
+
     // New: Reference to the component to rotate for visual aiming (e.g., weapon bone)
     public Transform aimingPivot;
 
     // New: Limits the visual rotation, e.g., 60 degrees up, 60 degrees down
     public float verticalAimLimit = 60f;
+
+    // NEW: Reference to the Audio Source component on this GameObject
+    private AudioSource audioSource; // ADDED AUDIO SOURCE REFERENCE
+
+
+    void Start()
+    {
+        // Get the Audio Source component
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource component is missing on the Gun GameObject!");
+        }
+    }
 
     void Update()
     {
@@ -22,6 +37,8 @@ public class Gun : MonoBehaviour
         HandleVisualAiming();
 
         // 2. FIRING INPUT
+
+        // Bullet Fire and Animation Trigger remains on mouse PRESS (GetMouseButtonDown)
         if (Input.GetMouseButtonDown(0))
         {
             if (gunAnimator != null && !IsInIdleState())
@@ -36,6 +53,12 @@ public class Gun : MonoBehaviour
             {
                 Debug.Log("Cannot shoot while in the Idle Menu state!");
             }
+        }
+
+        // NEW LOGIC: Play the sound effect ONLY on mouse RELEASE (GetMouseButtonUp)
+        if (Input.GetMouseButtonUp(0))
+        {
+            PlayGunSoundOnRelease();
         }
     }
 
@@ -70,7 +93,7 @@ public class Gun : MonoBehaviour
         return currentState.IsName(IdleStateName) || currentState.IsName("root|Idle_Focus");
     }
 
-    void FireBullet()
+    public void FireBullet()
     {
         if (bulletPrefab == null || bulletSpawnPoint == null)
         {
@@ -93,4 +116,15 @@ public class Gun : MonoBehaviour
             gunAnimator.SetTrigger("Shoot");
         }
     }
+
+    // NEW METHOD: Dedicated function for sound playback on release
+    void PlayGunSoundOnRelease()
+    {
+        // Check if the gun is NOT idle before playing the sound, matching the firing logic
+        if (audioSource != null && (gunAnimator == null || !IsInIdleState()))
+        {
+            audioSource.Play();
+        }
+    }
 }
+//----------------------------
