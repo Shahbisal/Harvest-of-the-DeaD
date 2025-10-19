@@ -15,8 +15,8 @@ TagManager:
   - Bullet
   - Player
   - MAP_UI
-  - 
-  - 
+  - HideFromMap
+  - Zombie
   - 
   - 
   - 
