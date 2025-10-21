@@ -14,6 +14,15 @@ public class Bullets : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        // NEW CODE: Check if the bullet hits a Zombie and deal damage.
+        ZombieAI zombie = collision.gameObject.GetComponent<ZombieAI>();
+        if (zombie != null)
+        {
+            // Damage value set to 100 to ensure ONE hit kill (100 >= 100 max health).
+            // ZombieAI maxHealth is 100, so 100 damage is a one-shot kill.
+            zombie.TakeDamage(100);
+        }
+
         // Prevents the bullet from destroying itself when it hits the "Player" tagged object.
         if (collision.gameObject.CompareTag("Player"))
         {
