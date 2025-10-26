@@ -6,9 +6,12 @@ public class ZombieProximityHandler : MonoBehaviour
     private Transform playerTransform;
     private Animator animator;
 
+    // Flag to stop the script's logic when the zombie dies
+    private bool isShuttingDown = false;
+
     [Header("Behavior Settings")]
     public float detectionRange = 15f;
-    public string attackAnimationBool = "IsAttacking";
+    public string attackAnimationBool = "IsAttacking"; // Removed from use
 
     [Header("Audio Settings")]
     public float maxVolume = 0.8f;
@@ -18,14 +21,15 @@ public class ZombieProximityHandler : MonoBehaviour
 
     void Start()
     {
-        // Get components
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
 
-        // Find the player's transform
-        if (FindObjectOfType<CameraController>() != null)
+        // Find the player's transform (using modern method)
+        CameraController cameraController = FindFirstObjectByType<CameraController>();
+
+        if (cameraController != null)
         {
-            playerTransform = FindObjectOfType<CameraController>().playerBody;
+            playerTransform = cameraController.playerBody;
         }
         else
         {
@@ -34,7 +38,7 @@ public class ZombieProximityHandler : MonoBehaviour
             return;
         }
 
-        // --- NEW INITIAL CHECK LOGIC ---
+        // --- INITIAL CHECK LOGIC ---
         if (audioSource != null)
         {
             float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
@@ -42,18 +46,11 @@ public class ZombieProximityHandler : MonoBehaviour
 
             if (playerIsInRange)
             {
-                // If already in range, start the sound immediately at MAX volume 
-                // and set the animator state.
                 audioSource.volume = maxVolume;
                 audioSource.Play();
-                if (animator != null)
-                {
-                    animator.SetBool(attackAnimationBool, true);
-                }
             }
             else
             {
-                // If out of range, ensure volume is silent.
                 audioSource.volume = 0f;
             }
         }
@@ -61,20 +58,19 @@ public class ZombieProximityHandler : MonoBehaviour
 
     void Update()
     {
-        if (playerTransform == null || audioSource == null || animator == null) return;
+        // If the shutdown flag is active, stop all logic.
+        if (isShuttingDown) return;
+
+        if (playerTransform == null || audioSource == null) return;
 
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
 
-        // --- 1. BEHAVIOR (Animation) LOGIC ---
+        // --- 1. PROXIMITY STATUS LOGIC ---
         bool currentlyInRange = distanceToPlayer <= detectionRange;
 
         if (currentlyInRange != playerIsInRange)
         {
-            // State change detected (entering or exiting range)
             playerIsInRange = currentlyInRange;
-
-            // Set the Animator boolean to switch behavior (e.g., Idle to Run/Attack)
-            animator.SetBool(attackAnimationBool, playerIsInRange);
 
             // Start the audio playback only when entering range for the first time
             if (playerIsInRange && !audioSource.isPlaying)
@@ -90,9 +86,21 @@ public class ZombieProximityHandler : MonoBehaviour
         audioSource.volume = Mathf.MoveTowards(audioSource.volume, targetVolume, volumeFadeRate * Time.deltaTime);
 
         // --- 3. STOP AUDIO WHEN FADED ---
-        // If the zombie is out of range AND the volume has successfully faded to zero, stop the sound entirely.
         if (!playerIsInRange && audioSource.volume == 0f && audioSource.isPlaying)
         {
+            audioSource.Stop();
+        }
+    }
+
+    // Called by the ZombieAI script upon death
+    public void StopAudioOnDeath()
+    {
+        // Sets flag to stop Update() from running
+        isShuttingDown = true;
+
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            // Stops the audio instantly
             audioSource.Stop();
         }
     }

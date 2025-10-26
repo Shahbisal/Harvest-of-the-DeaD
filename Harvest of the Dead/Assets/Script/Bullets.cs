@@ -6,6 +6,9 @@ public class Bullets : MonoBehaviour
     public float lifeTime = 5f; // bullet disappears after this many seconds
     public GameObject hitEffect; // optional hit effect prefab
 
+    // DAMAGE VALUE: Set to 100 for a one-shot kill (maxHealth = 100)
+    private const int OneShotDamage = 100;
+
     void Start()
     {
         // Auto-destroy the bullet after some time (cleanup)
@@ -14,28 +17,30 @@ public class Bullets : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        // NEW CODE: Check if the bullet hits a Zombie and deal damage.
-        ZombieAI zombie = collision.gameObject.GetComponent<ZombieAI>();
+        // 1. DAMAGE APPLICATION (Look up the hierarchy for the main ZombieAI script)
+        // Check for the ZombieAI script on the hit object OR its parent (for hitting a limb/collider).
+        ZombieAI zombie = collision.gameObject.GetComponentInParent<ZombieAI>();
+
         if (zombie != null)
         {
-            // Damage value set to 100 to ensure ONE hit kill (100 >= 100 max health).
-            // ZombieAI maxHealth is 100, so 100 damage is a one-shot kill.
-            zombie.TakeDamage(100);
+            // Apply one-shot damage (100)
+            zombie.TakeDamage(OneShotDamage);
         }
 
-        // Prevents the bullet from destroying itself when it hits the "Player" tagged object.
+        // 2. Prevent Player Damage
         if (collision.gameObject.CompareTag("Player"))
         {
             return;
         }
 
-        // Spawn a hit effect if assigned
+        // 3. Spawn a hit effect
         if (hitEffect != null)
         {
             Instantiate(hitEffect, collision.contacts[0].point, Quaternion.identity);
         }
 
-        // Destroy the bullet IMMEDIATELY when it hits a non-player object.
+        // 4. Destroy the bullet IMMEDIATELY
         Destroy(gameObject);
     }
 }
+//---------------------------------------------------------final0
