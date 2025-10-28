@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,17 +9,19 @@ public class PlayerHealth : MonoBehaviour
     private float currentHealth;
 
     [Header("UI Settings")]
-    public GameObject deathUI; // Assign a UI panel with "YOU DIED" and "Tap to Continue"
-    public Slider healthBar;   // Optional health bar UI
+    public GameObject deathUI; // assign your "You Died" panel
+    public Slider healthBar;   // assign your health bar slider
 
     [Header("References")]
-    public Animator animator;   // Assign your player's Animator here
-    public MonoBehaviour[] scriptsToDisable; // e.g., movement or shooting scripts
+    public Animator animator;  // assign your player animator
 
     private bool isDead = false;
 
     void Start()
     {
+        // Ensure game runs normally if loaded after death
+        Time.timeScale = 1f;
+
         currentHealth = maxHealth;
 
         if (healthBar != null)
@@ -42,9 +44,7 @@ public class PlayerHealth : MonoBehaviour
             healthBar.value = currentHealth;
 
         if (currentHealth <= 0)
-        {
             Die();
-        }
     }
 
     void Die()
@@ -52,34 +52,45 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
-        // Play death animation
+        // 🔹 Trigger death animation
         if (animator != null)
             animator.SetTrigger("Die");
 
-        // Disable all player control scripts (movement, shooting, etc.)
-        foreach (var script in scriptsToDisable)
+        // 🔹 Disable all scripts except this one
+        MonoBehaviour[] allScripts = GetComponentsInChildren<MonoBehaviour>();
+        foreach (MonoBehaviour script in allScripts)
         {
-            if (script != null)
+            if (script != this)
                 script.enabled = false;
         }
 
-        // Show death UI
-        if (deathUI != null)
-            deathUI.SetActive(true);
+        // 🔹 Stop all audio
+        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource audio in allAudioSources)
+        {
+            audio.Stop();
+        }
 
-        // Pause everything after short delay (allow animation to play)
-        Invoke("ShowDeathScreen", 2f);
+        // 🔹 Unlock mouse + show cursor
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        // 🔹 Show death UI after a short delay so animation can play
+        Invoke(nameof(ShowDeathScreen), 1.5f);
     }
 
     void ShowDeathScreen()
     {
-        Time.timeScale = 0f; // Pause game
+        if (deathUI != null)
+            deathUI.SetActive(true);
+
+        Time.timeScale = 0f; // freeze game
     }
 
-    // Button callback on death screen
+    // 🔹 Called from "Tap to Continue" button
     public void OnRetryButton()
     {
-        Time.timeScale = 1f; // Resume game
-        SceneManager.LoadScene("MainMenu"); // Change to your Main Menu scene name
+        Time.timeScale = 1f; // unfreeze
+        SceneManager.LoadScene("MainMenu"); // replace with your actual scene name
     }
 }
