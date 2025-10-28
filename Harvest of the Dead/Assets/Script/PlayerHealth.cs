@@ -1,42 +1,45 @@
-using UnityEngine;
-using UnityEngine.UI; // Required for using UI components like Slider
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    // MUST be assigned to your UI Slider in the Inspector
-    public Slider healthBarSlider;
+    [Header("Health Settings")]
+    public float maxHealth = 100f;
+    private float currentHealth;
 
-    // Max health set to 6 for the 6-hit-kill rule (since damage is 1)
-    public const int MaxHealth = 6;
-    private int currentHealth;
+    [Header("UI Settings")]
+    public GameObject deathUI; // Assign a UI panel with "YOU DIED" and "Tap to Continue"
+    public Slider healthBar;   // Optional health bar UI
+
+    [Header("References")]
+    public Animator animator;   // Assign your player's Animator here
+    public MonoBehaviour[] scriptsToDisable; // e.g., movement or shooting scripts
+
+    private bool isDead = false;
 
     void Start()
     {
-        currentHealth = MaxHealth;
+        currentHealth = maxHealth;
 
-        if (healthBarSlider != null)
+        if (healthBar != null)
         {
-            healthBarSlider.maxValue = MaxHealth;
-            healthBarSlider.value = currentHealth;
+            healthBar.maxValue = maxHealth;
+            healthBar.value = maxHealth;
         }
+
+        if (deathUI != null)
+            deathUI.SetActive(false);
     }
 
-    /// <summary>
-    /// Reduces player health and checks for death.
-    /// Called by the ZombieAI script via the Animation Event.
-    /// </summary>
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(float damage)
     {
-        if (currentHealth <= 0) return;
+        if (isDead) return;
 
-        currentHealth -= damageAmount;
+        currentHealth -= damage;
 
-        if (healthBarSlider != null)
-        {
-            healthBarSlider.value = currentHealth;
-        }
-
-        Debug.Log("Player HIT! Remaining Health: " + currentHealth);
+        if (healthBar != null)
+            healthBar.value = currentHealth;
 
         if (currentHealth <= 0)
         {
@@ -44,14 +47,39 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void Die()
+    void Die()
     {
-        Debug.Log("Player Died!");
+        if (isDead) return;
+        isDead = true;
 
-        // Disable player controls
-        PlayerController pc = GetComponent<PlayerController>();
-        if (pc != null) pc.enabled = false;
+        // Play death animation
+        if (animator != null)
+            animator.SetTrigger("Die");
 
-        // Add death animation/game over screen logic here
+        // Disable all player control scripts (movement, shooting, etc.)
+        foreach (var script in scriptsToDisable)
+        {
+            if (script != null)
+                script.enabled = false;
+        }
+
+        // Show death UI
+        if (deathUI != null)
+            deathUI.SetActive(true);
+
+        // Pause everything after short delay (allow animation to play)
+        Invoke("ShowDeathScreen", 2f);
+    }
+
+    void ShowDeathScreen()
+    {
+        Time.timeScale = 0f; // Pause game
+    }
+
+    // Button callback on death screen
+    public void OnRetryButton()
+    {
+        Time.timeScale = 1f; // Resume game
+        SceneManager.LoadScene("MainMenu"); // Change to your Main Menu scene name
     }
 }
