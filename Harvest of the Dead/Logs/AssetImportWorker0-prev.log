@@ -15,7 +15,7 @@ C:/Users/Bisal shah/OneDrive/Desktop/Git/Harvest-of-the-DeaD/Harvest of the Dead
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59358
+64073
 -job-worker-count
 7
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/Bisal shah/OneDrive/Desktop/Git/Harvest-of-the-DeaD/Harvest of the Dead
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9816]  Target information:
+Player connection [7476]  Target information:
 
-Player connection [9816]  * "[IP] 10.1.116.121 [Port] 0 [Flags] 2 [Guid] 2216792989 [EditorId] 2216792989 [Version] 1048832 [Id] WindowsEditor(7,BISAL-CHAURASIYA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [7476]  * "[IP] 10.1.116.121 [Port] 0 [Flags] 2 [Guid] 1713870165 [EditorId] 1713870165 [Version] 1048832 [Id] WindowsEditor(7,BISAL-CHAURASIYA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [9816] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [9816] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7476] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [7476] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,7 +75,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 8.06 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 8.08 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.32f1 (b2e806cf271c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/Resources/UnitySubsystems
@@ -91,52 +91,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.32f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.010598 seconds.
-- Loaded All Assemblies, in  0.653 seconds
+Registered in 0.010902 seconds.
+- Loaded All Assemblies, in  0.696 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 479 ms
+Android Extension - Scanning For ADB Devices 494 ms
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.128 seconds
-Domain Reload Profiling: 1778ms
-	BeginReloadAssembly (227ms)
+- Finished resetting the current domain, in  1.154 seconds
+Domain Reload Profiling: 1847ms
+	BeginReloadAssembly (224ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (58ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (263ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (315ms)
 		LoadAssemblies (223ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (256ms)
-			TypeCache.Refresh (254ms)
-				TypeCache.ScanAssembly (234ms)
+		AnalyzeDomain (308ms)
+			TypeCache.Refresh (304ms)
+				TypeCache.ScanAssembly (282ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1128ms)
+	FinalizeReload (1155ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1052ms)
+		SetupLoadedEditorAssemblies (1096ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (639ms)
+			InitializePlatformSupportModulesInManaged (674ms)
 			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (215ms)
-			ProcessInitializeOnLoadMethodAttributes (114ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (214ms)
+			ProcessInitializeOnLoadMethodAttributes (109ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -145,879 +145,255 @@ Domain Reload Profiling: 1778ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.530 seconds
-Refreshing native plugins compatible for Editor in 4.35 ms, found 7 plugins.
+- Loaded All Assemblies, in  1.659 seconds
+Refreshing native plugins compatible for Editor in 7.49 ms, found 7 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.528 seconds
-Domain Reload Profiling: 3049ms
-	BeginReloadAssembly (283ms)
+- Finished resetting the current domain, in  1.423 seconds
+Domain Reload Profiling: 3074ms
+	BeginReloadAssembly (320ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (60ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (1094ms)
-		LoadAssemblies (738ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (75ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (1163ms)
+		LoadAssemblies (791ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (526ms)
-			TypeCache.Refresh (366ms)
-				TypeCache.ScanAssembly (339ms)
-			BuildScriptInfoCaches (136ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (1528ms)
+		AnalyzeDomain (560ms)
+			TypeCache.Refresh (381ms)
+				TypeCache.ScanAssembly (352ms)
+			BuildScriptInfoCaches (150ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1424ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1140ms)
+		SetupLoadedEditorAssemblies (1105ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (32ms)
+			InitializePlatformSupportModulesInManaged (29ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (193ms)
-			ProcessInitializeOnLoadAttributes (736ms)
-			ProcessInitializeOnLoadMethodAttributes (165ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (199ms)
+			ProcessInitializeOnLoadAttributes (726ms)
+			ProcessInitializeOnLoadMethodAttributes (138ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 5.08 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 6.75 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 238 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7182 unused Assets / (6.2 MB). Loaded Objects now: 7901.
-Memory consumption went from 187.6 MB to 181.4 MB.
-Total: 16.806300 ms (FindLiveObjects: 1.309200 ms CreateObjectMapping: 2.013700 ms MarkObjects: 7.735000 ms  DeleteObjects: 5.745200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 107204.421771 seconds.
-  path: Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack
-  artifactKey: Guid(a407cd9f32f7eeb4a9655f00e237e492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack using Guid(a407cd9f32f7eeb4a9655f00e237e492) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d615a8ee62756333eae8f44b554c1f1') in 0.0098838 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack/firing rifle.fbx
-  artifactKey: Guid(4e335c06fdaf6be4d9f0bbb853fc881e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack/firing rifle.fbx using Guid(4e335c06fdaf6be4d9f0bbb853fc881e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34c2bfc6bcdb5d47338448aa38ea9a16') in 0.0519122 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.714534 seconds.
-  path: Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack/reloading.fbx
-  artifactKey: Guid(5cd91a5c8c20971489825022a48e5dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack/reloading.fbx using Guid(5cd91a5c8c20971489825022a48e5dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48fcaa3855f87f0b24149bc1a4aa81f8') in 0.0054204 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.708874 seconds.
-  path: Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/BanyanTree.prefab
-  artifactKey: Guid(46d69f622d1354ee0820b7921e262b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/BanyanTree.prefab using Guid(46d69f622d1354ee0820b7921e262b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b3d8776c678b9c3a105c11da9aa3b275') in 6.3638079 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.116133 seconds.
-  path: Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/GroundTile.prefab
-  artifactKey: Guid(c1f4492f15da844ebae2767c08ef4aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/GroundTile.prefab using Guid(c1f4492f15da844ebae2767c08ef4aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b37dc7b6b7b69e6e6de98489347807f2') in 0.0950373 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerLong.002.prefab
-  artifactKey: Guid(8daffdc895bba4241b9da448f4b5fa9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerLong.002.prefab using Guid(8daffdc895bba4241b9da448f4b5fa9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84811a7b9266f9c6bd5f0139ef4dfb7f') in 0.071423 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerLong.004.prefab
-  artifactKey: Guid(303bcddb5a4903b4f8e8792be0982441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerLong.004.prefab using Guid(303bcddb5a4903b4f8e8792be0982441) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a121cfe8914967cbe8cd85037038a0ad') in 0.0466903 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerLong.002.fbx
-  artifactKey: Guid(a8eadd42d32364f4fa7162e3dfdaf492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerLong.002.fbx using Guid(a8eadd42d32364f4fa7162e3dfdaf492) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f7596b633d4385de2884c34e1c0561c') in 0.0777255 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerLong.004.fbx
-  artifactKey: Guid(c6a7f9a5141be0f4295bd6e2e3b8e6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerLong.004.fbx using Guid(c6a7f9a5141be0f4295bd6e2e3b8e6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73ac0df181b3f3faf24acefa15dec03e') in 0.0464089 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerSmall.002.prefab
-  artifactKey: Guid(a5748823bb7cd2e47bb2a3d10cfed207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerSmall.002.prefab using Guid(a5748823bb7cd2e47bb2a3d10cfed207) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c6e2aba3715f9fa34c76b684d74cfb2') in 0.0461855 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerShort.001.prefab
-  artifactKey: Guid(6fad581e3a9e19449b03fccf2afbc735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerShort.001.prefab using Guid(6fad581e3a9e19449b03fccf2afbc735) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b02e252a5ecd952b56dc6c9a6a3d9567') in 0.0362553 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerSmall.003.prefab
-  artifactKey: Guid(40d38b8c9e4c7fe41952eda1af1df0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerSmall.003.prefab using Guid(40d38b8c9e4c7fe41952eda1af1df0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8cf6680ec24782695e8b873221cb7ccd') in 0.0741656 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Helmet/Helmet.003.prefab
-  artifactKey: Guid(53124c6650baf9746b4806dd087e98cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Helmet/Helmet.003.prefab using Guid(53124c6650baf9746b4806dd087e98cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dab549fba43110f524e38831ef0da88b') in 0.0854828 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerSmall.003.fbx
-  artifactKey: Guid(bb3a7226573f8db4d8acbdd7be00857d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerSmall.003.fbx using Guid(bb3a7226573f8db4d8acbdd7be00857d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '150b0ab0564ad6835d3376a63e2ace2c') in 0.0413788 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Hoe.fbx
-  artifactKey: Guid(1a03b27098206a049b35542f95896a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Hoe.fbx using Guid(1a03b27098206a049b35542f95896a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '006970e20ac3bf928222b1908b7cf4f8') in 0.0932274 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hoe/Hoe.prefab
-  artifactKey: Guid(16fd498cd107d8b4a8f272099c4221fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hoe/Hoe.prefab using Guid(16fd498cd107d8b4a8f272099c4221fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b241a3b8a529f2a403318072f64a15df') in 0.0362287 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerShort.004.fbx
-  artifactKey: Guid(7735bc7b3b5feb94c99c4d4c7b89dc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerShort.004.fbx using Guid(7735bc7b3b5feb94c99c4d4c7b89dc16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ea7c538f787bb35c338042deeb6fd9e') in 0.0431021 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.004.fbx
-  artifactKey: Guid(82006f901a317864b95e27d49c99b2cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.004.fbx using Guid(82006f901a317864b95e27d49c99b2cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2664ed766f4bfea18902479f236ce48e') in 0.1116837 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.008.fbx
-  artifactKey: Guid(cb6f5987998ec454b9bdcf24e76bfb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.008.fbx using Guid(cb6f5987998ec454b9bdcf24e76bfb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f2d3a6720a65f21c5d8f56bad57ac1b') in 0.0627078 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.005.prefab
-  artifactKey: Guid(d123c6d3e28263e409d6e948c12c8d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.005.prefab using Guid(d123c6d3e28263e409d6e948c12c8d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b4d048792f471c5da877ddb2e88ab66') in 0.0445679 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.004.prefab
-  artifactKey: Guid(943e81527a053a840a8c2b8c0e3ada19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.004.prefab using Guid(943e81527a053a840a8c2b8c0e3ada19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5713b0e5ada2db8109494b6177798ada') in 0.0423787 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerSmall.002.fbx
-  artifactKey: Guid(78ad8bc9056cca5419ed15d410e302d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/HammerSmall.002.fbx using Guid(78ad8bc9056cca5419ed15d410e302d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a759e858acfa82557395447767159e78') in 0.0459114 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.009.prefab
-  artifactKey: Guid(daf6a7b120908994c9062d9fae6c08de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.009.prefab using Guid(daf6a7b120908994c9062d9fae6c08de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '699e93380c0c8ab537d239be954f78b3') in 0.0455822 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Helmet/Helmet.001.prefab
-  artifactKey: Guid(8ddd4854f358a8548ba0901cc2f33c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Helmet/Helmet.001.prefab using Guid(8ddd4854f358a8548ba0901cc2f33c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c962d63ee21f33eff0054ff5e3b39c8c') in 0.037918 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldBlack.001.fbx
-  artifactKey: Guid(9a9228bfcb8aead45890316f1cc0dfbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldBlack.001.fbx using Guid(9a9228bfcb8aead45890316f1cc0dfbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cf34d40ab413a839e5bdc7cb06ad722') in 0.0465783 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldPurple.002.prefab
-  artifactKey: Guid(12cd8839276818141bc102272d21e45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldPurple.002.prefab using Guid(12cd8839276818141bc102272d21e45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d3c1602e4a87a948933bcd3812cc419') in 0.0347033 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldRed.001.prefab
-  artifactKey: Guid(1f34e1c8964c5f349b448c9c4d577e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldRed.001.prefab using Guid(1f34e1c8964c5f349b448c9c4d577e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dcd0bc19f54f35b05be4c3ef51acba48') in 0.0955326 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldRed.002.fbx
-  artifactKey: Guid(f81fa2b29b321114bba51779f01eff96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldRed.002.fbx using Guid(f81fa2b29b321114bba51779f01eff96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbeeb9f0c00e7e2d66ea8874cb2279ce') in 0.0718342 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldPurple.002.fbx
-  artifactKey: Guid(847e200f76ca6624583e933ef952f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldPurple.002.fbx using Guid(847e200f76ca6624583e933ef952f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa391aaf83918720f9b3ba4ecf63735d') in 0.049613 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Knife.fbx
-  artifactKey: Guid(864a7d003beaa6c46a143755dcc55d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Knife.fbx using Guid(864a7d003beaa6c46a143755dcc55d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8f7b767abefa4b2f07a2df19dd3d507') in 0.0926339 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000079 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Lamp.002.fbx
-  artifactKey: Guid(dab2bf84fef0e2b4791836b71c67b993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Lamp.002.fbx using Guid(dab2bf84fef0e2b4791836b71c67b993) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a2d706e1fe545028e6f4740fff44bf3') in 0.0438805 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Knives/Knife.001.prefab
-  artifactKey: Guid(f11c6956012374941970e45c7fb73afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Knives/Knife.001.prefab using Guid(f11c6956012374941970e45c7fb73afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35d327213a76557203f9d7a72a91393a') in 0.0380938 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Lamp/Lamp Parts/Lamp.002.prefab
-  artifactKey: Guid(48771a1c757cd44438f2c9f6bc8c3601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Lamp/Lamp Parts/Lamp.002.prefab using Guid(48771a1c757cd44438f2c9f6bc8c3601) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3933c8827ce5701ccbb9921b0f0a5b3') in 0.0337726 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Lance.001.fbx
-  artifactKey: Guid(f3ccb276ee7479945b0f1a156f9c6b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Lance.001.fbx using Guid(f3ccb276ee7479945b0f1a156f9c6b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b00a2f776aa28e254e8f7b91c718c5b3') in 0.1212856 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/LampProp.fbx
-  artifactKey: Guid(84cdca8e1a1e95948b147539824b23a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/LampProp.fbx using Guid(84cdca8e1a1e95948b147539824b23a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6de3ff39e0dc6f33b70038de01e5a472') in 0.0534501 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerShort.003.prefab
-  artifactKey: Guid(55c7adbbda28d8a4a8f49f208c6ce21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerShort.003.prefab using Guid(55c7adbbda28d8a4a8f49f208c6ce21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7827e306559e1815d962c492f1be02d7') in 0.0354784 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldRed.002.prefab
-  artifactKey: Guid(d6ea4ba926edaa64d817f7f5e9534b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldRed.002.prefab using Guid(d6ea4ba926edaa64d817f7f5e9534b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '660648fff2b75b05558c36ef3bf4a0de') in 0.0404282 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.001.fbx
-  artifactKey: Guid(2383af54ceb87bc45acb4a9bf205a311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.001.fbx using Guid(2383af54ceb87bc45acb4a9bf205a311) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9290ad125a55021b3314adf1318c4a67') in 0.0622154 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldBlack.002.prefab
-  artifactKey: Guid(0829e17ce801b764380c068b0bb5de4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldBlack.002.prefab using Guid(0829e17ce801b764380c068b0bb5de4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53c17707aae8d3ec3c2cb9ab8e19ed58') in 0.0440593 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldPurple.001.fbx
-  artifactKey: Guid(d86fd3593093d264caff671766cf8cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldPurple.001.fbx using Guid(d86fd3593093d264caff671766cf8cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aca81e809a124b333e6bbb33da77f506') in 0.0749914 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.008.prefab
-  artifactKey: Guid(02efd0885b35c874b944435699b086b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.008.prefab using Guid(02efd0885b35c874b944435699b086b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94b533a25fbae2ff8165e39c1af8d6e1') in 0.0831266 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Lance/Lance.002.prefab
-  artifactKey: Guid(d71c1cba26abd83409fff73876d679dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Lance/Lance.002.prefab using Guid(d71c1cba26abd83409fff73876d679dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fa411056cebc00b7e53b0a394826e9c') in 0.0414474 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldPurple.001.prefab
-  artifactKey: Guid(792d7e6caed639d4ca40a85708507595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldPurple.001.prefab using Guid(792d7e6caed639d4ca40a85708507595) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd90674affb733b0c1280410a90eb8c10') in 0.040825 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.007.prefab
-  artifactKey: Guid(740e4f6c660a98c42a57a02823e26f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.007.prefab using Guid(740e4f6c660a98c42a57a02823e26f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ede59a8bc0810fd1a8c7eff3ac8b10fb') in 0.0421285 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Lamp/Lamp Parts/LampProp.prefab
-  artifactKey: Guid(07c14c0df39992e49a9247ae81a67c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Lamp/Lamp Parts/LampProp.prefab using Guid(07c14c0df39992e49a9247ae81a67c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a49069784ed0b491b6184f8332c6ba81') in 0.0375403 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.011.prefab
-  artifactKey: Guid(d5a340db870960a46a47c8a551d904d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShield.011.prefab using Guid(d5a340db870960a46a47c8a551d904d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04304205629dbe47201db0f29dcc6934') in 0.0449401 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldBlack.002.fbx
-  artifactKey: Guid(ab5236bab1db93e418435a667b53f119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShieldBlack.002.fbx using Guid(ab5236bab1db93e418435a667b53f119) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '294851fd914a920383839f9e378f09f3') in 0.0436771 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Lance/Lance.004.prefab
-  artifactKey: Guid(7464232626694ce48b1de5a1098a013e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Lance/Lance.004.prefab using Guid(7464232626694ce48b1de5a1098a013e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a038d5213acf88ecc745dec19464823') in 0.0948989 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerSmall.004.prefab
-  artifactKey: Guid(2f8f212686110674ba17c0ba23a31524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Hammers/HammerSmall.004.prefab using Guid(2f8f212686110674ba17c0ba23a31524) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79234498ea999abf4e2bd0a51e722f1b') in 0.0563825 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Lamp/Lamp Parts/Lamp.001.prefab
-  artifactKey: Guid(42247636c1773c543988e66dd51b5e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Lamp/Lamp Parts/Lamp.001.prefab using Guid(42247636c1773c543988e66dd51b5e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0cb5d07687e06dfae6c5ea00b788c608') in 0.0565395 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Lance/Lance.001.prefab
-  artifactKey: Guid(d581928fd52e7e048b4eb1584119ba66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Lance/Lance.001.prefab using Guid(d581928fd52e7e048b4eb1584119ba66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3497d4c3b9a69a9da02dd8d651663fa') in 0.0426108 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Lamp/Lamp.002 1.prefab
-  artifactKey: Guid(1433fa7d59e31684d90afbf730a17596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Lamp/Lamp.002 1.prefab using Guid(1433fa7d59e31684d90afbf730a17596) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f64db7d8a6db9627a4a317c00bbe966') in 0.0351235 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Lance.002.fbx
-  artifactKey: Guid(7a02a4110e41cc34a93a62625706a874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Lance.002.fbx using Guid(7a02a4110e41cc34a93a62625706a874) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '196e023ba7c35e845ab9169ff154a82a') in 0.0583502 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.003.fbx
-  artifactKey: Guid(a8fc03cb2ddb93c489909deda2bf65e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.003.fbx using Guid(a8fc03cb2ddb93c489909deda2bf65e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e012bd5bc914eca9831ae47c284d8faf') in 0.0489727 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldBlack.003.prefab
-  artifactKey: Guid(62a4097e9f2ddb341a6ded59d7541e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldBlack.003.prefab using Guid(62a4097e9f2ddb341a6ded59d7541e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef336832072f51a8094009303e90a7ce') in 0.0392281 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldPurple.004.prefab
-  artifactKey: Guid(62e8fab924da5ea41bb5adcedc8e4bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Iron Shields/IronShieldPurple.004.prefab using Guid(62e8fab924da5ea41bb5adcedc8e4bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86fc82811787506dffc609d10b9e4192') in 0.0530763 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.007.fbx
-  artifactKey: Guid(cbe405939e08c744287e2bb4df546b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/IronShield.007.fbx using Guid(cbe405939e08c744287e2bb4df546b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6f0e3d676582773d2266b73228e91f2') in 0.058459 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.155354 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Mallet.001.fbx
-  artifactKey: Guid(5a8df2056b01b414182d57edef33e30b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Mallet.001.fbx using Guid(5a8df2056b01b414182d57edef33e30b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20aa2e7a27b29ab82b428328e0638bf7') in 0.0460095 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Mallet.004.fbx
-  artifactKey: Guid(b188f32913e7e6544a91cfcebcd3730a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Mallet.004.fbx using Guid(b188f32913e7e6544a91cfcebcd3730a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cba05ca7a5a342734baeb5ff7bb7d531') in 0.052945 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Mallets/Mallet.003.prefab
-  artifactKey: Guid(87c5c54cdf1a906449d391fe32ddb0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Mallets/Mallet.003.prefab using Guid(87c5c54cdf1a906449d391fe32ddb0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67d61c0c8fd19c764336b3e8c1642be1') in 0.041644 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.416632 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Coin and Bag/MoneyBag.prefab
-  artifactKey: Guid(56a9dad37dfe00646a8b38bf1b49dfbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Coin and Bag/MoneyBag.prefab using Guid(56a9dad37dfe00646a8b38bf1b49dfbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f6533ff2aadbdd576c1092462c9196b') in 0.0908252 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Mountain.fbx
-  artifactKey: Guid(9d60979987a6e7b4f83e3ec54fc6de8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Mountain.fbx using Guid(9d60979987a6e7b4f83e3ec54fc6de8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef576d803975f01db282feaa7550cfd2') in 0.0804265 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Oven.fbx
-  artifactKey: Guid(066cfcd63055cad4fa58f529a6dd1981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Oven.fbx using Guid(066cfcd63055cad4fa58f529a6dd1981) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73490c053003a8f77e8dcfa14dd7670f') in 0.0772169 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.736462 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Fantasy Female Character Hetalia - Props/Pistol/Pistol.prefab
-  artifactKey: Guid(48ce147f2b108f24282427d4cd649593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Fantasy Female Character Hetalia - Props/Pistol/Pistol.prefab using Guid(48ce147f2b108f24282427d4cd649593) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6be6e424c6930cbfea549c5763bf4c35') in 0.1066678 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Fantasy Female Character Hetalia - Props/Pistol/Individual Parts/Pistol_Trigger_2.prefab
-  artifactKey: Guid(f910b6ae2af2135429d6039011815c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Fantasy Female Character Hetalia - Props/Pistol/Individual Parts/Pistol_Trigger_2.prefab using Guid(f910b6ae2af2135429d6039011815c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e21edff933131b8ca780f861d8e2e4fe') in 0.0367281 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Plant.001.fbx
-  artifactKey: Guid(b6c58260976a722418c8b89d1af62eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Plant.001.fbx using Guid(b6c58260976a722418c8b89d1af62eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15f194803c870e8bf05f1af8ec6feb01') in 0.0566005 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.297001 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Plant.002.fbx
-  artifactKey: Guid(64a8c3317dbc2454b93c9cb299e4caae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Plant.002.fbx using Guid(64a8c3317dbc2454b93c9cb299e4caae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99ef3d5a79f0ebaadc36f840b9bd3a06') in 0.0380481 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Plant.005.fbx
-  artifactKey: Guid(997633ad9d58bb7498c1a461ea28605c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Plant.005.fbx using Guid(997633ad9d58bb7498c1a461ea28605c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '292d1f85212694346dae626224f9dd8e') in 0.0756559 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.680320 seconds.
-  path: Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack/rifle run.fbx
-  artifactKey: Guid(4d593436862974d45a889b604fb7a426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack/rifle run.fbx using Guid(4d593436862974d45a889b604fb7a426) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dcf75db4a73576c8bd07aa10e3e6d076') in 0.0070791 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.405256 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Nature/Rocks/Rocks/Rock.002.prefab
-  artifactKey: Guid(2f5c5c3d7486bdb47983d0710ac86697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Nature/Rocks/Rocks/Rock.002.prefab using Guid(2f5c5c3d7486bdb47983d0710ac86697) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '242322f859f1da815a30b47edfc25834') in 0.0321091 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Rock.004.fbx
-  artifactKey: Guid(f609bab318be73f4cbe4cfaad7c64f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Rock.004.fbx using Guid(f609bab318be73f4cbe4cfaad7c64f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '44b69c1b5ef680b492bb28f6c95d2133') in 0.0496867 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.309054 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Rock.009.fbx
-  artifactKey: Guid(b8bb72f0fe2568f4a930b41ca29d6874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Rock.009.fbx using Guid(b8bb72f0fe2568f4a930b41ca29d6874) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29c5092584faab0fe92424a9c2b00453') in 0.0436626 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Nature/Rocks/Rocks/Rock.012.prefab
-  artifactKey: Guid(07709d46085772949b86c895be5c960f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Nature/Rocks/Rocks/Rock.012.prefab using Guid(07709d46085772949b86c895be5c960f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e00ac72e42520d86bf63c16e93dc8b41') in 0.046107 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005151 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Nature/Rocks/Rocks/Rock.013.prefab
-  artifactKey: Guid(72f395f68f50c1e43b045a3ea31e74de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Nature/Rocks/Rocks/Rock.013.prefab using Guid(72f395f68f50c1e43b045a3ea31e74de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bdbc2747d1992ca009f4e92894f28214') in 0.0377726 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Rock.020.fbx
-  artifactKey: Guid(168b265a7322f9a49b8ef2a368371eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Rock.020.fbx using Guid(168b265a7322f9a49b8ef2a368371eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a90f095070da26c5b85827f40112f79a') in 0.0484062 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Nature/Rocks/Rocks/Rock.022.prefab
-  artifactKey: Guid(385d14da46984e547b4b5ae3e82fb30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Nature/Rocks/Rocks/Rock.022.prefab using Guid(385d14da46984e547b4b5ae3e82fb30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e97e6712e265616b238d7d4b0359e8af') in 0.0319132 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.078434 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/RockMoss.001.fbx
-  artifactKey: Guid(b4895f5fc5f24214f8665b0702e80038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/RockMoss.001.fbx using Guid(b4895f5fc5f24214f8665b0702e80038) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7d2432e18e27c6ee6ae057907bb99d6') in 0.0641614 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/RockMoss.003.fbx
-  artifactKey: Guid(1d788f302a6ceb143b0868a719c53ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/RockMoss.003.fbx using Guid(1d788f302a6ceb143b0868a719c53ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9aee4ba7c8d2ef767411bb68b8929378') in 0.0555884 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.016668 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Scroll.001.fbx
-  artifactKey: Guid(c85cf70afd46067429d6f4e4ab6dcc1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Scroll.001.fbx using Guid(c85cf70afd46067429d6f4e4ab6dcc1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd598328d1634aa40bef27c3bec8f71c') in 0.0393405 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Farm Pack - Props/SFF_Beehive_001.fbx
-  artifactKey: Guid(16b14d73061574f409677218ccf6b28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Farm Pack - Props/SFF_Beehive_001.fbx using Guid(16b14d73061574f409677218ccf6b28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0760ed858f22b528b2f7869efd64fa7') in 0.043092 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.169905 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Farm Pack - Props/SFF_Beehive_002.fbx
-  artifactKey: Guid(10ccf398d662cd34ab35a625c9ab0437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Farm Pack - Props/SFF_Beehive_002.fbx using Guid(10ccf398d662cd34ab35a625c9ab0437) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '980a9ed0400df5406a553ee7ffe80efe') in 0.0412093 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Farm Pack - Props/SFF_Nest_002.fbx
-  artifactKey: Guid(4c012529449f3624aa709690a5829489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Farm Pack - Props/SFF_Nest_002.fbx using Guid(4c012529449f3624aa709690a5829489) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a454b4dbccdac241102d83ba6cdd2c06') in 0.0497037 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.408777 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Farm Pack - Props/SFF_Nest_003.fbx
-  artifactKey: Guid(097080bba0db3f8419bd0c993ab686cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Farm Pack - Props/SFF_Nest_003.fbx using Guid(097080bba0db3f8419bd0c993ab686cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26992f4652a0103337c80f64301227d4') in 0.039247 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Fantasy Magitech Laboratory/SFML_Lance.fbx
-  artifactKey: Guid(cb0ba832dead17a418a422f28fcc91eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Fantasy Magitech Laboratory/SFML_Lance.fbx using Guid(cb0ba832dead17a418a422f28fcc91eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b50248073771baf12789fdff0a9d59f') in 0.0542783 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.260231 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Fantasy Magitech Laboratory - Props/Individual Parts/SFML_Shotgun.prefab
-  artifactKey: Guid(c605e4d857398d84fa9dd889cdc7dd7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Fantasy Magitech Laboratory - Props/Individual Parts/SFML_Shotgun.prefab using Guid(c605e4d857398d84fa9dd889cdc7dd7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4071c3e3c789efecf1b5f54280d32158') in 0.0344671 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Fantasy Magitech Laboratory/SFML_Shotgun_Prop.fbx
-  artifactKey: Guid(8a818849bfd037c42a49ca26ea63eda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Fantasy Magitech Laboratory/SFML_Shotgun_Prop.fbx using Guid(8a818849bfd037c42a49ca26ea63eda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cff3180734942b78d601cde9a806cb13') in 0.0726905 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004908 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Fantasy Magitech Laboratory/SFML_Staff.fbx
-  artifactKey: Guid(c17bd82cd0e1e704b891040b2ea22531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Fantasy Magitech Laboratory/SFML_Staff.fbx using Guid(c17bd82cd0e1e704b891040b2ea22531) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '884418b778b23f3e820b3d6fe7a14159') in 0.0767614 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.217859 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Nature Pack - Mountains/SFNP_Broken_Barrel Variant.prefab
-  artifactKey: Guid(3310be0bcca9bcf45bd079d93753add5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Nature Pack - Mountains/SFNP_Broken_Barrel Variant.prefab using Guid(3310be0bcca9bcf45bd079d93753add5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac05674ec64860043a0f66e233465883') in 0.0267987 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Shelve/Shelve.001.prefab
-  artifactKey: Guid(47b6443892d32ae499c2808538dd737b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Decorative Props/Shelve/Shelve.001.prefab using Guid(47b6443892d32ae499c2808538dd737b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b105acda06a533b35cafcbbc046c78f') in 0.0416439 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Shelve.002.fbx
-  artifactKey: Guid(8a126a03c66ac93429ae958ac69cc0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Shelve.002.fbx using Guid(8a126a03c66ac93429ae958ac69cc0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebc39d50bdc1e96781d81ff40ddac61d') in 0.080125 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.428870 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Fantasy Herbalism Pack - Props/Staff.prefab
-  artifactKey: Guid(199874fa20093a848956ff5fae9003ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Extra Content/Fantasy Herbalism Pack - Props/Staff.prefab using Guid(199874fa20093a848956ff5fae9003ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05075bc514e295e4acdf88345244cc26') in 0.0452293 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Stone Shields/StoneShield.001.prefab
-  artifactKey: Guid(728ef455f4fa8064f84ffcfc9d0db416) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Stone Shields/StoneShield.001.prefab using Guid(728ef455f4fa8064f84ffcfc9d0db416) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'abcb744a82f246843d2fe0e338032270') in 0.0351658 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.034273 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/StoneShield.004.fbx
-  artifactKey: Guid(b5ea854efd155a64285f7038daca3d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/StoneShield.004.fbx using Guid(b5ea854efd155a64285f7038daca3d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07888e5ac98c8c1fff650a35e9f86969') in 0.0434152 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Stone Shields/StoneShield.005.prefab
-  artifactKey: Guid(470f7d7e9c28b964bae7cab3fb88e478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/Prefabs/Weapons and Shields/Shields/Stone Shields/StoneShield.005.prefab using Guid(470f7d7e9c28b964bae7cab3fb88e478) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a63be75ca7c5625e43a497a3101a95a') in 0.0426445 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.200804 seconds.
-  path: Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack/strafe.fbx
-  artifactKey: Guid(c2102097218ce0b47a02e0b684cf8e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Chracter/Zombie Shooter Series Farmer Cowboy/Slim Shooter Pack/strafe.fbx using Guid(c2102097218ce0b47a02e0b684cf8e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af70cf1e6e6b796fd85291df11661a4a') in 0.0075017 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.121653 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Sword.001.fbx
-  artifactKey: Guid(bd2e2bdecc6fc9848b0b63388d85a658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Sword.001.fbx using Guid(bd2e2bdecc6fc9848b0b63388d85a658) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1fa5a9f9e07561c5af8b77bed2ec2bf1') in 0.0748565 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.262075 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Sword.003.fbx
-  artifactKey: Guid(6b25405ed64adfc4aa28bfa064ebddd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Sword.003.fbx using Guid(6b25405ed64adfc4aa28bfa064ebddd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1933ce0bc38b2041a68cb77bdcdbe85c') in 0.0912366 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Table.fbx
-  artifactKey: Guid(8ff140876d9626248884fb42471b4c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Table.fbx using Guid(8ff140876d9626248884fb42471b4c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e51b1368b98e569733987b7691a34bc7') in 0.0926197 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.184137 seconds.
-  path: Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Target.fbx
-  artifactKey: Guid(970fb4b063e2b174684111c31d474ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Daniel Mistage/Stylized Fantasy Armory/FBX/Target.fbx using Guid(970fb4b063e2b174684111c31d474ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d3486d38fc7054cf84853c3b314a3db') in 0.0768743 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab
-  artifactKey: Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab using Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45f1f08080c43b9a32a560415d6c287c') in 0.0430372 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.347097 seconds.
-  path: Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile4.prefab
-  artifactKey: Guid(5193382618d54f84b87649b2fbadbb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile4.prefab using Guid(5193382618d54f84b87649b2fbadbb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf1bf521e05eb78d6392334084108c01') in 0.0608965 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile8.prefab
-  artifactKey: Guid(1e66d2a3cc6511a49b71e7f6589a1d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile8.prefab using Guid(1e66d2a3cc6511a49b71e7f6589a1d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd1db46611889e95bfb7ab10ccad6dd1') in 0.0460123 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile10.prefab
-  artifactKey: Guid(5a42d29fbf7424949aef05b1ffaf7f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/AI Navigation/2.0.9/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile10.prefab using Guid(5a42d29fbf7424949aef05b1ffaf7f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '896c4b3fef5c9d30f6f63e5bc16ab8b5') in 0.1280109 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Unloading 7182 unused Assets / (5.7 MB). Loaded Objects now: 7901.
+Memory consumption went from 183.5 MB to 177.9 MB.
+Total: 17.064400 ms (FindLiveObjects: 1.687400 ms CreateObjectMapping: 1.579400 ms MarkObjects: 8.260500 ms  DeleteObjects: 5.535000 ms)
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.355 seconds
+Refreshing native plugins compatible for Editor in 6.21 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.441 seconds
+Domain Reload Profiling: 2791ms
+	BeginReloadAssembly (357ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (96ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (844ms)
+		LoadAssemblies (678ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (345ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (312ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1442ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1056ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (209ms)
+			ProcessInitializeOnLoadAttributes (676ms)
+			ProcessInitializeOnLoadMethodAttributes (123ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 3.59 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7180 unused Assets / (5.3 MB). Loaded Objects now: 7915.
+Memory consumption went from 158.5 MB to 153.2 MB.
+Total: 15.949500 ms (FindLiveObjects: 1.339400 ms CreateObjectMapping: 1.814100 ms MarkObjects: 7.201000 ms  DeleteObjects: 5.591300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.337 seconds
+Refreshing native plugins compatible for Editor in 5.00 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.299 seconds
+Domain Reload Profiling: 2632ms
+	BeginReloadAssembly (308ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (63ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (885ms)
+		LoadAssemblies (653ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (404ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (361ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1300ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (943ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (189ms)
+			ProcessInitializeOnLoadAttributes (620ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 7.23 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7180 unused Assets / (5.6 MB). Loaded Objects now: 7917.
+Memory consumption went from 159.0 MB to 153.3 MB.
+Total: 21.802600 ms (FindLiveObjects: 2.705000 ms CreateObjectMapping: 2.205000 ms MarkObjects: 9.197300 ms  DeleteObjects: 7.692200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.434 seconds
+Refreshing native plugins compatible for Editor in 5.31 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.325 seconds
+Domain Reload Profiling: 2760ms
+	BeginReloadAssembly (341ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (84ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (979ms)
+		LoadAssemblies (708ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (453ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (410ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (1326ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (971ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (204ms)
+			ProcessInitializeOnLoadAttributes (615ms)
+			ProcessInitializeOnLoadMethodAttributes (106ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 3.50 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7180 unused Assets / (5.6 MB). Loaded Objects now: 7919.
+Memory consumption went from 160.9 MB to 155.3 MB.
+Total: 18.444500 ms (FindLiveObjects: 1.962300 ms CreateObjectMapping: 2.219000 ms MarkObjects: 8.184400 ms  DeleteObjects: 6.075200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.315 seconds
+Refreshing native plugins compatible for Editor in 5.83 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.330 seconds
+Domain Reload Profiling: 2649ms
+	BeginReloadAssembly (306ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (77ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (879ms)
+		LoadAssemblies (653ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (387ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (346ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1341ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (970ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (200ms)
+			ProcessInitializeOnLoadAttributes (619ms)
+			ProcessInitializeOnLoadMethodAttributes (105ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 6.31 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7180 unused Assets / (5.6 MB). Loaded Objects now: 7921.
+Memory consumption went from 160.9 MB to 155.3 MB.
+Total: 22.860700 ms (FindLiveObjects: 1.547800 ms CreateObjectMapping: 3.085200 ms MarkObjects: 8.905400 ms  DeleteObjects: 9.317600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
